@@ -1,2 +1,2 @@
-# Clone Quest
+# <img src="https://slackmojis.com/emojis/30922-vader_point/download" style="width: 75px;"/> Clone Quest <img src="https://slackmojis.com/emojis/30922-vader_point/download" style="transform: scaleX(-1); width: 75px;"/>
 ### Your Star Wars Body Double Finder

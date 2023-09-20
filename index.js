@@ -17,7 +17,6 @@ async function findClone() {
 	// Build top5 HTML
 	let top5HTML = "";
 	top5.forEach((character) => {
-		console.log(character[trait]);
 		top5HTML += `<li>${character.name} at ${character[trait]}</li>`;
 	});
 

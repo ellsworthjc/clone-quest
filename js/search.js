@@ -17,7 +17,6 @@ export function searchHeightWeight(trait="height", userValue, data) {
 		return a['diff'] - b['diff'];
 	});
 
-	console.log(data);
 	let top5 = data.slice(0, 5);
 	return top5;
 }

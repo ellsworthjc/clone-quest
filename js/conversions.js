@@ -9,9 +9,18 @@ export function ftInchesToInches(feet, inches) {
 }
 /**
  * Converts inches to cm
- * @param {number} heightInInches
+ * @param {number} inches
  * @returns {number}
  */
-export function inchesToCm(heightInInches) {
-	return parseInt(heightInInches * 2.54);
+export function inchesToCm(inches) {
+	return parseInt(inches * 2.54);
+}
+
+/**
+ * Converst pounds to inches
+ * @param {number} pounds
+ * @returns {number}
+ */
+export function poundsToKg(pounds) {
+	return parseInt(pounds / 2.2046);
 }

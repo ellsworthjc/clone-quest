@@ -1,15 +1,20 @@
 import { dataMap, buildData } from "./js/dataFetch.js";
-import { searchHeights } from "./js/search.js";
+import { searchHeightWeight } from "./js/search.js";
 
 // let data = await buildData();
 let data = dataMap;
 
+// set trait and translate weight to mass
+let trait = "mass";
 
-let top5 = searchHeights(177.8, data);
+// Get top5 characters matching input
+let top5 = searchHeightWeight(trait, 75, data);
+
+// Build top5 HTML
 let top5HTML = "";
 top5.forEach((character) => {
-	console.log(character);
-	top5HTML += `<li>${character.name} at ${character.height}</li>`;
+	console.log(character[trait]);
+	top5HTML += `<li>${character.name} at ${character[trait]}</li>`;
 });
 
 document.querySelector('#answer').innerHTML = `

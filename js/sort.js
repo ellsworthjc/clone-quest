@@ -6,10 +6,6 @@
  * @returns {Array}
  */
 export function sortCharactersByTrait(characters, trait="height", order="desc") {
-	if (trait === 'weight') {
-		trait = 'mass';
-	};
-
 	characters.sort((a, b) => {
 		if (order === 'asc') {
 			return Math.sign(parseInt(a[trait]) - parseInt(b[trait]));

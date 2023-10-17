@@ -27,6 +27,6 @@ async function findClone() {
 		</ol>
 	`;
 
-	// render data to html
-	document.querySelector('#data').innerText = JSON.stringify(data, null, 2);
+	// render additional data to html
+	// document.querySelector('#data').innerText = JSON.stringify(data, null, 2);
 }

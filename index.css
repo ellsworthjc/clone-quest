@@ -3,7 +3,87 @@ START
 Main Styles
 */
 :root {
+	font-family: sans-serif;
 
+	/* Color scheme from this for now: https://cdn3.vox-cdn.com/thumbor/r_qTUWk_UFNJco8VzzoeFPi_uyQ%3D/cdn0.vox-cdn.com/uploads/chorus_asset/file/5572849/sw_final.0.png */
+	/* Light Side Colors */
+	--light: #D9D8E1;
+	--accent: #357FC2;
+	--light-brown: #9E9898;
+	--brown: #685F62;
+	--dark-brown: #372F32;
+	--dark: #130F10;
+
+	/* Dark Side Colors */
+	/* --light: #E1DDD8;
+	--accent: #A34322;
+	--light-brown: #AE9D92;
+	--brown: #666C71;
+	--dark-brown: #3F3B3C;
+	--dark: #181313; */
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	background-color: var(--dark);
+	color: var(--light);
+
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	min-height: 100vh;
+	height: 30rem;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.form-group label {
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+.form-group input {
+	width: min-content;
+	text-align: center;
+}
+
+.form-group .dropdown-icon::after {
+	content: "⇣";
+}
+
+input,
+select,
+button {
+	all: unset;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 /*
 END

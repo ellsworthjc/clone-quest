@@ -6,41 +6,48 @@
 	<title>Star Wars Matcher</title>
 	<link href="index.css" rel="stylesheet" />
 </head>
-<body class="bg-gray-900 text-white">
-	<label for="trait">
-		Trait
-	</label>
-	<select id="trait">
-		<option value="height">Height</option>
-		<option value="mass">Weight</option>
-	</select>
-	<br />
-	<br />
-	<label for="userValue">
-		Your Trait Value (metric)
-	</label>
-	<input id="userValue" type="number" min="0" value="0"/>
-	<br />
-	<br />
-	<button id="findClone">Find Your Clone</button>
+<body>
+	<section>
+		<form class="form">
+			<div class="form-group">
+				<label for="trait">
+					Trait
+				</label>
+				<select id="trait">
+					<option value="height">Height</option>
+					<option value="mass">Weight</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="userValue">
+					Your Trait Value (metric units)
+				</label>
+				<divc class="form-subgroup">
+					<input id="userValue" type="number" min="0" value="0"/>
+					<span data-units>cm</span>
+				</div>
+			</div>
 
-	<div class="light-button-container">
-		<div class="btn"><a href="#">Read More</a></div>
-	 </div>
+			<div class="light-button-container">
+				<div class="btn">
+					<a id="findClone" href="#">Submit</a>
+				</div>
+			</div>
 
-	<div id="loader">
-		<div class="ls-particles ls-part-1"></div>
-		<div class="ls-particles ls-part-2"></div>
-		<div class="ls-particles ls-part-3"></div>
-		<div class="ls-particles ls-part-4"></div>
-		<div class="ls-particles ls-part-5"></div>
-		<div class="lightsaber ls-left ls-green"></div>
-		<div class="lightsaber ls-right ls-red"></div>
-	</div>
+			<div id="loader" style="display: none;">
+				<div class="ls-particles ls-part-1"></div>
+				<div class="ls-particles ls-part-2"></div>
+				<div class="ls-particles ls-part-3"></div>
+				<div class="ls-particles ls-part-4"></div>
+				<div class="ls-particles ls-part-5"></div>
+				<div class="lightsaber ls-left ls-green"></div>
+				<div class="lightsaber ls-right ls-red"></div>
+			</div>
+		</form>
+	</section>
 
 	<h1 id="answer"></h1>
 	<pre><div id="data"></div></pre>
 	<script src="index.js" type="module"></script>
-	<script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
 </body>
 </html>

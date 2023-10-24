@@ -1,7 +1,6 @@
 import { dataMap, buildData } from "./js/dataFetch.js";
 import { searchHeightWeight } from "./js/search.js";
 
-document.querySelector('input').addEventListener('click', e => e.target.select());
 document.querySelector('#findClone').addEventListener('click', findClone);
 
 async function findClone() {

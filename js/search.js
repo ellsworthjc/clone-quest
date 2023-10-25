@@ -1,5 +1,3 @@
-
-
 /**
  * Returns the 5 characters whose heights are closest to the user's
  * @param {string} trait - only supports height or mass currently

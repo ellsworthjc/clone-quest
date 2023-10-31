@@ -225,13 +225,13 @@ START
 Lightsaber Loader
 */
 #loader {
+	display: none;
 	width: 80px;
 	height: 40px;
-	position: relative;
-	/* position: absolute; */
-	/* top: 50%; */
-	/* left: 50%; */
-	margin: 2rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	z-index: 1000;
   }
 

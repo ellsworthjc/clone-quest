@@ -4,6 +4,8 @@ import { searchHeightWeight } from "./js/search.js";
 document.querySelector('#findClone').addEventListener('click', findClone);
 
 async function findClone() {
+	const loader = document.querySelector('#loader');
+	loader.style.display = "block";
 
 	// let data = await buildData();
 	let data = dataMap;
@@ -20,11 +22,15 @@ async function findClone() {
 		top5HTML += `<li>${character.name} at ${character[trait]}</li>`;
 	});
 
-	document.querySelector('#answer').innerHTML = `
-		<ol>
-			${top5HTML}
-		</ol>
-	`;
+	setTimeout(() => {
+		loader.style.display = "none";
+		document.querySelector('#answer').innerHTML = `
+			<ol>
+				${top5HTML}
+			</ol>
+		`;
+	}, 5000);
+
 
 	// render additional data to html
 	// document.querySelector('#data').innerText = JSON.stringify(data, null, 2);

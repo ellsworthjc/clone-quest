@@ -29,7 +29,7 @@ async function findClone() {
 		${top5HTML}
 		</ol>
 		`;
-	}, 4000);
+	}, 5000);
 
 
 	// render additional data to html

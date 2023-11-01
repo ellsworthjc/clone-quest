@@ -4,8 +4,8 @@ import { searchHeightWeight } from "./js/search.js";
 document.querySelector('#findClone').addEventListener('click', findClone);
 
 async function findClone() {
-	const loader = document.querySelector('#loader');
-	loader.style.display = "block";
+	const loadingModal = document.querySelector('#loadingModal');
+	loadingModal.classList.add("active");
 
 	// let data = await buildData();
 	let data = dataMap;
@@ -23,11 +23,11 @@ async function findClone() {
 	});
 
 	setTimeout(() => {
-		loader.style.display = "none";
+		loadingModal.classList.remove("active");
 		document.querySelector('#answer').innerHTML = `
-			<ol>
-				${top5HTML}
-			</ol>
+		<ol>
+		${top5HTML}
+		</ol>
 		`;
 	}, 5000);
 

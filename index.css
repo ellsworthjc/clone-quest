@@ -85,139 +85,30 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+#loadingModal {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--dark);
+	border: none;
+	top: -100vh;
+	background-image: url("http://www.sevristh.co.uk/pics/shaft_door_dstar.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: overlay;
+	z-index: 100;
+	transition: all 1500ms;
+}
+
+#loadingModal.active {
+	top: 0;
+}
+
 /*
 END
 Main Styles
-*/
-
-
-/*
-START
-Light Button
-https://uiverse.io/VashonG/fresh-horse-89
-*/
-.light-button-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	width: 200px;
-  }
-
-  .light-button-container .btn {
-	height: 50px;
-	margin: 20px;
-	margin-bottom: 40px;
-	position: relative;
-	width: 155px;
-  }
-
-  .light-button-container .btn a {
-	align-items: center;
-	background: rgba(255, 255, 255, 0.05);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-	border-radius: 30px;
-	box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
-	color: #fff;
-	display: flex;
-	font-size: 18px;
-	font-weight: 700;
-	left: 0;
-	top: 0;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	justify-content: center;
-	letter-spacing: 1px;
-	text-decoration: none;
-	overflow: hidden;
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(15px);
-	z-index: 1;
-	transition: 0.5s;
-  }
-
-  .light-button-container .btn:hover a {
-	letter-spacing: 2px;
-  }
-
-  .light-button-container .btn a::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50%;
-	height: 100%;
-	background: linear-gradient(to left,
-				  rgba(255,255,255,0.15),
-				  transparent);
-	transform: skewX(45deg) translateX(0);
-	transition: 0.5s;
-  }
-
-  .light-button-container .btn:hover a::before {
-	transform: skewX(45deg) translateX(200%);
-  }
-
-  .light-button-container .btn::before {
-	content: '';
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: -5px;
-	height: 10px;
-	width: 30px;
-	background: rgb(63, 238, 10);
-	border-radius: 10px;
-	transition: 0.5s;
-	transition-delay: 0s;
-  }
-
-  .light-button-container .btn:hover::before {
-	bottom: 0;
-	height: 50%;
-	width: 80%;
-	border-radius: 30px;
-	transition-delay: 0.5s;
-  }
-
-  .light-button-container .btn::after {
-	content: '';
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	top: -5px;
-	height: 10px;
-	width: 30px;
-	background: rgb(7, 245, 59);
-	border-radius: 10px;
-	transition: 0.5s;
-	transition-delay: 0s;
-  }
-
-  .light-button-container .btn:hover::after {
-	top: 0;
-	height: 50%;
-	width: 80%;
-	border-radius: 30px;
-	transition-delay: 0.5s;
-  }
-
-  .light-button-container .btn:nth-child(1):before,
-  .light-button-container .btn:nth-child(1)::after {
-	background: #0cf318;
-	box-shadow: 0 0 5px #0ffb2e,
-	  0 0 15px #2bff59,
-	  0 0 30px #32ff2b,
-	  0 0 60px #22ff47;
-  }
-
-  .light-button-container .btn:active a {
-	color: #000;
-  }
-/*
-END
-Light Button
 */
 
 /*
@@ -225,7 +116,6 @@ START
 Lightsaber Loader
 */
 #loader {
-	display: none;
 	width: 80px;
 	height: 40px;
 	position: absolute;
@@ -956,4 +846,134 @@ Lightsaber Loader
 /*
 END
 Lightsaber Loader
+*/
+
+
+/*
+START
+Light Button
+https://uiverse.io/VashonG/fresh-horse-89
+*/
+.light-button-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 200px;
+  }
+
+  .light-button-container .btn {
+	height: 50px;
+	margin: 20px;
+	margin-bottom: 40px;
+	position: relative;
+	width: 155px;
+  }
+
+  .light-button-container .btn a {
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+	color: #fff;
+	display: flex;
+	font-size: 18px;
+	font-weight: 700;
+	left: 0;
+	top: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(15px);
+	z-index: 1;
+	transition: 0.5s;
+  }
+
+  .light-button-container .btn:hover a {
+	letter-spacing: 2px;
+  }
+
+  .light-button-container .btn a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left,
+				  rgba(255,255,255,0.15),
+				  transparent);
+	transform: skewX(45deg) translateX(0);
+	transition: 0.5s;
+  }
+
+  .light-button-container .btn:hover a::before {
+	transform: skewX(45deg) translateX(200%);
+  }
+
+  .light-button-container .btn::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -5px;
+	height: 10px;
+	width: 30px;
+	background: rgb(63, 238, 10);
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0s;
+  }
+
+  .light-button-container .btn:hover::before {
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+	transition-delay: 0.5s;
+  }
+
+  .light-button-container .btn::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -5px;
+	height: 10px;
+	width: 30px;
+	background: rgb(7, 245, 59);
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0s;
+  }
+
+  .light-button-container .btn:hover::after {
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+	transition-delay: 0.5s;
+  }
+
+  .light-button-container .btn:nth-child(1):before,
+  .light-button-container .btn:nth-child(1)::after {
+	background: #0cf318;
+	box-shadow: 0 0 5px #0ffb2e,
+	  0 0 15px #2bff59,
+	  0 0 30px #32ff2b,
+	  0 0 60px #22ff47;
+  }
+
+  .light-button-container .btn:active a {
+	color: #000;
+  }
+/*
+END
+Light Button
 */

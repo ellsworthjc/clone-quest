@@ -1,3 +1,14 @@
+export const unitsMap = {
+	"imperial": {
+		"length": "inches",
+		"weight": "pounds",
+	},
+	"metric": {
+		"length": "centimeters",
+		"weight": "kilograms",
+	},
+}
+
 /**
  * Converts feet/inches to just inches
  * @param {number} feet

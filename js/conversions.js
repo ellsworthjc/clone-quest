@@ -1,7 +1,7 @@
 export const unitsMap = {
 	"imperial": {
 		"length": "inches",
-		"weight": "pounds"
+		"weight": "pounds",
 	},
 	"metric": {
 		"length": "centimeters",

@@ -5,7 +5,7 @@ export const unitsMap = {
 	},
 	"metric": {
 		"length": "centimeters",
-		"weight": "kilograms"
+		"weight": "kilograms",
 	},
 }
 

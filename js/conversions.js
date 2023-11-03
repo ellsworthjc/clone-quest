@@ -1,11 +1,22 @@
 export const unitsMap = {
 	"imperial": {
-		"length": "inches",
-		"weight": "pounds",
+		"length": {
+			"inches": "in",
+			"feet": "ft",
+		},
+		"weight": {
+			"pounds": "lbs",
+			"ounces": "oz",
+		}
 	},
 	"metric": {
-		"length": "centimeters",
-		"weight": "kilograms",
+		"length": {
+			"centimeters": "cm",
+			"meters": "m",
+		},
+		"weight": {
+			"kilograms": "kg",
+		}
 	},
 }
 

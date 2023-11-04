@@ -1,4 +1,4 @@
-export const unitsMap = {
+export const unitAbbrevs = {
 	"imperial": {
 		"length": {
 			"inches": "in",

@@ -1,4 +1,4 @@
-export const unitAbbrevs = {
+export const abbreviations = {
 	"imperial": {
 		"length": {
 			"inches": "in",

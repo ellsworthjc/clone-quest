@@ -25,9 +25,9 @@ async function findClone() {
 	setTimeout(() => {
 		loadingModal.classList.remove("active");
 		document.querySelector('#answer').innerHTML = `
-		<ol>
-		${top5HTML}
-		</ol>
+			<ol>
+				${top5HTML}
+			</ol>
 		`;
 	}, 5000);
 

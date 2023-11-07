@@ -1,5 +1,5 @@
 import { dataMap, buildData } from "./js/dataFetch.js";
-import { searchHeightWeight } from "./js/search.js";
+import { topFiveMatchesByTrait } from "./js/search.js";
 
 document.querySelector('#findClone').addEventListener('click', findClone);
 
@@ -14,7 +14,7 @@ async function findClone() {
 	const userValue = document.querySelector('#userValue').value;
 
 	// Get top5 characters matching input
-	let top5 = searchHeightWeight(trait, userValue, data);
+	let top5 = topFiveMatchesByTrait(trait, userValue, data);
 
 	// Build top5 HTML
 	let top5HTML = "";

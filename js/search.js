@@ -4,7 +4,7 @@
  * @param {number} userValue - a user's height/weight in cm/kg
  * @returns {Array} - 5 characters whose heights/weights are closest to the user's
  */
-export function searchHeightWeight(trait="height", userValue, data) {
+export function topFiveMatchesByTrait(trait="height", userValue, data) {
 	// loop through data
 	// find 5 characters where abs(character.trait - userValue) is the smallest number
 	data.forEach(character => {

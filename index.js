@@ -16,7 +16,7 @@ async function findClone() {
 	// Get top5 characters matching input
 	let top5 = topFiveMatchesByTrait(trait, userValue, data);
 
-	// Build top5 HTML
+	// Build top5 HTML. Currently just 5 <li> elements.
 	let top5HTML = "";
 	top5.forEach((character) => {
 		top5HTML += `<li>${character.name} at ${character[trait]}</li>`;

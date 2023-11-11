@@ -1,3 +1,8 @@
+/**
+ *
+ * @param {URL} url - starwars api
+ * @returns {JSON}
+ */
 async function getData(url) {
 	const startTime = performance.now();
 	const response = await fetch(url);

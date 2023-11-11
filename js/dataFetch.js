@@ -12,6 +12,10 @@ async function getData(url) {
 	return data;
 };
 
+/**
+ *
+ * @returns {JSON}
+ */
 export async function buildData() {
 	let allData = [];
 	const startTime = performance.now();
@@ -44,6 +48,9 @@ export async function buildData() {
 // commented out for now because we've stored it in dataMap since this data pretty much never changes
 // buildData();
 
+/**
+ * Static map of data from star wars api. Used during development.
+ */
 export const dataMap = [
 	{
 	  "name": "Luke Skywalker",

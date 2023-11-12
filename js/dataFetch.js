@@ -49,7 +49,7 @@ export async function buildData() {
 // buildData();
 
 /**
- * Static map of data from star wars api. Used during development.
+ * Static map of the data from star wars api. Used during development so we don't have to hit the api every time.
  */
 export const dataMap = [
 	{

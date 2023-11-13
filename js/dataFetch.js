@@ -1,5 +1,5 @@
 /**
- *
+ * I don't think I'm using this right now. Should probably remove it for now.
  * @param {URL} url - starwars api
  * @returns {JSON}
  */
@@ -13,7 +13,7 @@ async function getData(url) {
 };
 
 /**
- *
+ * Build the complete character data from the swapi.dev api
  * @returns {JSON}
  */
 export async function buildData() {

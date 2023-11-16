@@ -13,7 +13,7 @@ async function getData(url) {
 };
 
 /**
- * Build the complete character data from the swapi.dev api
+ * Build the complete character data from the swapi.dev ap
  * @returns {JSON}
  */
 export async function buildData() {

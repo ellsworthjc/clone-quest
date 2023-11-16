@@ -1,5 +1,5 @@
 /**
- * I don't think I'm using this right now. It should probably be removed.
+ * I don't think I'm using this right now. It should probably be removed?
  * @param {URL} url - starwars api
  * @returns {JSON}
  */
